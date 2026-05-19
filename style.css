@@ -1,19 +1,103 @@
-h1 {
-        color: rgb(0, 0, 0);
-        font-size: 50px;
-        font-weight: bold;
-        font-family: Arial;
-    }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-h2  {
-       color: rgb(0, 0, 0);
-       font-size: 30px;
-       font-weight: bold;
-       font-family: Arial;
-    }
-a   {
-       color: rgb(30, 56, 177);
-       font-size: 30px;
-       font-weight: bold;
-       font-family: Arial;
-    }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f5f3;
+  color: #1a1a18;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 0.5px solid #e0dfd9;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 340px;
+  overflow: hidden;
+}
+
+.card-head {
+  padding: 1rem 1.25rem;
+  border-bottom: 0.5px solid #e0dfd9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 3px;
+}
+
+h1 { font-size: 15px; font-weight: 300; letter-spacing: -0.02em; }
+h1 strong { font-weight: 500; }
+
+.count {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: #bbb;
+}
+
+.lista-ias { list-style: none; }
+
+.lista-ias li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 1.25rem;
+  border-bottom: 0.5px solid #e0dfd9;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s;
+}
+
+.lista-ias li:last-child a { border-bottom: none; }
+.lista-ias li a:hover { background: #f5f5f3; }
+
+.rank {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: #ccc;
+  min-width: 14px;
+  text-align: right;
+}
+
+.logo-wrap {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: 0.5px solid #e0dfd9;
+  background: #fafaf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-wrap img { width: 15px; height: 15px; object-fit: contain; }
+
+.info { flex: 1; }
+.name { font-size: 12px; font-weight: 500; display: block; }
+.desc { font-size: 10px; color: #aaa; display: block; margin-top: 1px; }
+
+.tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 99px;
+  flex-shrink: 0;
+}
+
+.tag-s { background: #EAF3DE; color: #3B6D11; }
+.tag-a { background: #E6F1FB; color: #185FA5; }
+.tag-b { background: #FAEEDA; color: #854F0B; }
+
+.arrow { font-size: 11px; color: #ccc; }
